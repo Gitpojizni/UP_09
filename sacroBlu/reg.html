@@ -47,32 +47,80 @@
 							class="input_reg"
 							type="text"
 							name="login"
-							minlengt="3"
+							placeholder="login6"
+							title="минимальное кол-во символов для логина - 6"
+							minlength="6"
 							required
 						>
 					</div>
 					<div class="input_label_block">
 						<label>Введите ФИО</label>
-						<input class="input_reg" type="text" name="FIO" required>
+						<input
+							class="input_reg"
+							type="text" 
+							name="FIO" 
+							placeholder="Иванов Иван Иванович"
+							required
+						>
 					</div>
 					<div class="input_label_block">
 						<label>Введите телефон</label>
-						<input class="input_reg" type="tel" name="phone_num" placeholder="8(***-***-**-**)" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+						<input 
+							class="input_reg" 
+							type="tel" 
+							name="phone_num" 
+							placeholder="8(***-***-**-**)" 
+							pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+							required
+						>
 					</div>
 					<div class="input_label_block">
 						<label>Введите почту</label>
-						<input class="input_reg" type="mail" name="mail" required>
+						<input 
+							class="input_reg" 
+							type="mail" 
+							name="mail" 
+							placeholder="your@mail.com"
+							required
+						>
 					</div>
 					<div class="input_label_block">
 						<label>Введите пароль</label>
-						<input class="input_reg" type="password" name="pass1" required>
+						<input 
+							class="input_reg" 
+							type="password" 
+							name="pass1" 
+							title="Минимальное кол-во символов для пароля - 8"
+							minlength="8"
+							required
+						>
 					</div>
 					<div class="input_label_block">
 						<label>Повторите пароль</label>
-						<input class="input_reg" type="password" name="pass2" required>
+						<input 
+							class="input_reg" 
+							type="password" 
+							name="pass2" 
+							title="Минимальное кол-во символов для пароля - 8"
+							minlength="8"
+							required
+						>
 					</div>
 					<div>
-						<input type="submit" name="reg" value="Создать пользователя">
+						<input 
+							class="input_reg" 
+							type="submit" 
+							name="reg" 
+							value="Создать пользователя"
+						>
+					</div>
+					<br>
+					<div class="do_you_reg_auth">
+						Уже зарегистрированы?
+						<a href="auto.html">
+							<br>
+							Войти
+						</a>
 					</div>
 				</form>
 			</div>

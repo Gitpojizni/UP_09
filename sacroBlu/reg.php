@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		$result = mysqli_query($conn, $query);
 	} else {
-		echo "Пароли не совпадают";
+		readfile("reg.html");
 	}
 
     file_put_contents('app.log', "Обработано: $name\n", FILE_APPEND);
