@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<title>INDX</title>
+	</head>
+	<body>
+		<header>
+			<div id="icon_of_company">
+				<img src="src/image02.jpg">
+			</div>
+			<div class="header_button_section">
+				<a href="reg.html">
+					<button class="header_button">
+						Регистрация
+					</button>
+				</a>
+				<a href="auto.html">
+					<button class="header_button">
+						Войти
+					</button>
+				</a>
+				<a href="see_bid.html">
+					<button class="header_button">
+						Просмотреть заявки
+					</button>
+				</a>
+				<a href="add_bid.html">
+					<button class="header_button">
+						Добавить заявку
+					</button>
+				</a>
+				<!-- Показывать только в случае если пользователь зарегистрирован как администратор-->
+				<a href="admin_panel.html">
+					<button class="header_button">
+						Панель администратора
+					</button>
+				</a>
+			</div>
+		</header>
+		<main>
+			<div class="container">	
+				<form class="reg_form" method="post" action="reg.php">
+					<div class="input_label_block">
+						<label>Введите логин</label>
+						<input
+							class="input_reg"
+							type="text"
+							name="login"
+							minlengt="3"
+							required
+						>
+					</div>
+					<div class="input_label_block">
+						<label>Введите ФИО</label>
+						<input class="input_reg" type="text" name="FIO" required>
+					</div>
+					<div class="input_label_block">
+						<label>Введите телефон</label>
+						<input class="input_reg" type="tel" name="phone_num" placeholder="8(***-***-**-**)" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+					</div>
+					<div class="input_label_block">
+						<label>Введите почту</label>
+						<input class="input_reg" type="mail" name="mail" required>
+					</div>
+					<div class="input_label_block">
+						<label>Введите пароль</label>
+						<input class="input_reg" type="password" name="pass1" required>
+					</div>
+					<div class="input_label_block">
+						<label>Повторите пароль</label>
+						<input class="input_reg" type="password" name="pass2" required>
+					</div>
+					<div>
+						<input type="submit" name="reg" value="Создать пользователя">
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer>
+			shooter
+		</footer>
+	</body>
+</html>
