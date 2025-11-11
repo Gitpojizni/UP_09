@@ -24,7 +24,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	
-	gap: 60vw;
+	gap: 50vw;
 }
 
 .icon_of_company {
@@ -47,10 +47,12 @@ a {
 .header_button {
 	background: transparent 50%;
 	/* backdrop-filter: ; */
-	border-radius: 20px;
+	border-radius: 3vh;
 	border: 1px dashed transparent;
 	
 	font-size: 1.6vh;
+	font-family: cursive;
+	font-weight: bold;
 	color: black;
 }
 
@@ -71,7 +73,108 @@ main {
 	flex-direction: column;
 }
 
-.container {
+
+
+footer {
+	width: 100vw;
+	height: 10vh;
+	background: black;
+}
+
+
+
+
+
+/*index.html*/
+
+.index_container {
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	background: whitesmoke;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.alert_about_reg {
+	width: 45vw;
+	height: 45vh;
+	background: rgb(200, 200, 200);
+	backdrop-filter: blur(5px);
+	
+	border-radius: 3vh;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	position: absolute;
+	top: auto;
+	left: auto;
+	z-index: 3;
+}
+
+.blur_container {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(233, 233, 233, 0.7);
+	
+	animation: BlurVibe 5s infinite;
+	backdrop-filter: blur(5px);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	position: absolute;
+	top: auto;
+	left: auto;
+	z-index: 2;
+}
+
+.tovar_bar {
+	width: 90vw;
+	height: 15vh;
+	background-color: rgb(222, 222, 222);
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.img_of_tovar {
+	width: 30%;
+	height: 100%;
+}
+
+.name_and_description_of_tovar {
+	width: 70%;
+	height: 100%;
+	
+	font-family: cursive;
+	font-size: 1.7vh;
+}
+
+
+
+@keyframes BlurVibe {
+	0% {
+		backdrop-filter: blur(1px);
+	}
+	50% {
+		backdrop-filter: blur(6px);
+	}
+	100% {
+		backdrop-filter: blur(1px);
+	}
+}
+
+/*index.html*/
+/*reg.html*/
+
+.reg_container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -82,7 +185,7 @@ main {
 	height: 60vh;
 	background-color: pink;
 	
-	border-radius: 20px;
+	border-radius: 3vh;
 	
 	display: flex;
 	justify-content: center;
@@ -93,23 +196,29 @@ main {
 .input_label_block {
 	margin: 3px;
 	font-family: cursive;
-	font-size: 20px;
+	font-size: 2vh;
+	font-weight: bold;
 	gap: 100vw;
 }
 
 .input_reg {
 	border-radius: 10px;
 	font-family: cursive;
-	font-size: 20px;
+	font-size: 1.5vh;
 }
 
 .do_you_reg_auth {
 	font-family: cursive;
-	font-size: 20px;
+	font-size: 2vh;
+	font-weight: bold;
 }
 
-footer {
-	width: 100vw;
-	height: 10vh;
-	background: black;
-}
+
+
+
+
+
+
+
+
+/*reg.html*/

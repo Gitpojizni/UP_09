@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 $host = "localhost";
 $username = "root";
@@ -23,13 +24,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		VALUES ('$login', '$name', '$last_name', '$father_name', '$phone_num', '$mail', '$pass1', '0')";
 		
 		$result = mysqli_query($conn, $query);
+		$_SESSION['registered'] = '1';
 	} else {
 		readfile("reg.html");
 	}
 
     file_put_contents('app.log', "Обработано: $name\n", FILE_APPEND);
 }
-readfile("see_bid.html");
+/**/
+readfile("index.html");
 
 exit();
 ?>
