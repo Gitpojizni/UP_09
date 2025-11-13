@@ -1,5 +1,6 @@
 <?php 
 session_start();
+$_SESSION['registered'] = '0';
 
 $host = "localhost";
 $username = "root";
@@ -25,6 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		$result = mysqli_query($conn, $query);
 		$_SESSION['registered'] = '1';
+		
+		if (isset($_SERVER['HTTP_REFERER'])) {
+			$referer = $_SERVER['HTTP_REFERER'];
+			echo "$referer";
+			header("Location: " . $referer);
+		}
+		
 	} else {
 		readfile("reg.html");
 	}
@@ -32,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     file_put_contents('app.log', "Обработано: $name\n", FILE_APPEND);
 }
 /**/
-readfile("index.html");
+
 
 exit();
 ?>

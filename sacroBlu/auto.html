@@ -10,7 +10,7 @@
 				<img src="src/image02.jpg">
 			</div>
 			<div class="header_button_section">
-				<a href="index.html">
+				<a href="index.php">
 					<button class="header_button">
 						Главная
 					</button>
@@ -44,7 +44,35 @@
 			</div>
 		</header>
 		<main>
-			
+			<form class="autorization_form" method="post" action="auto.php">
+				<h1>Вход в аккаунт</h1>
+				<div class="input_label_block">
+					<label>Введите логин</label>
+					<input 
+						class="input_reg"
+						type="text" 
+						name="login" 
+						required
+					>
+				</div>
+				<div class="input_label_block">
+					<label>Введите пароль</label>
+					<input 
+						class="input_reg"
+						type="password" 
+						name="password" 
+						minlength="8"
+						required
+					>
+				</div>
+				<div class="input_label_block">
+					<input 
+						class="input_reg"
+						type="submit" 
+						name="auto" 
+						value="Войти">
+				</div>
+			</form>
 		</main>
 		<footer>
 			
